@@ -37,9 +37,9 @@ def Boruvka(n, graph):
 
             if one_comp == True:
                 if min_w[u] == -1 or graph[min_w[set_u] ][2] > w:
-                    min_w[u] = id
+                    min_w[set_u] = id
                 if min_w[v] == -1 or graph[min_w[set_v] ][2] > w:
-                    min_w[v] = id
+                    min_w[set_v] = id
 
 
         for i in range(n):
@@ -78,6 +78,7 @@ print(w)
 
 for i in mst:
     print(i[0], i[1], i[2])
+
 
 
 
